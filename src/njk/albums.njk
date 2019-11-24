@@ -1,0 +1,9 @@
+{% extends '_layouts/base.njk' %}
+
+{% block content %}
+  {% for disc in data.discography %}
+  <img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
+  <h2>{{ disc.title }}</h2>
+  <p>{{ disc.year }}</p>
+  {% endfor %}
+{% endblock %}
