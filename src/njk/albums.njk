@@ -1,24 +1,21 @@
 {% extends '_layouts/base.njk' %}
 
 {% block content %}
-  {% for disc in data.discography %}
-  <img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
-  <h2>{{ disc.title }}</h2>
-  <p>{{ disc.year }}</p>
-  {% endfor %}
-{% endblock %}
 
-<div class="row">
-  {% for member in data.members %}
-  <div class="col-sm-6 col-lg-3"> 
-      <div class="card">
-        <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"> {{ member.name }}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-detail page">Learn More</a>
-        </div>
+
+<div class="container">
+  <div class="row">
+    {% for disc in data.discography %}
+    <div class="col-sm-6 col-md-4 mb-4"> 
+    <div class="card">
+      <img src="img/discs/{{ disc.image }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
- </div>
-  {% endfor %}
+    </div>
+  </div>
+
+    {% endfor %}
+  </div>
 </div>
+{% endblock %}
