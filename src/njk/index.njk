@@ -6,17 +6,17 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Queen</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <h1 class="display-4 text-center">Queen</h1>
+    <p class="lead text-center">Since 1970</p>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col">
-    <h1>Meet the Band</h1>
+    <div class="col text-center">
+    <h1>Meet the Greatest Band of All Time</h1>
     <p class="author">By Anna Whitehead</p>
-    <p class="date"> Published November 12, 2019</p>
+    <p class="date"> Published Decemeber 8, 2019</p>
     </div>
   </div>
   <div class="row">
@@ -30,12 +30,15 @@
 <div class="row">
   {% for member in data.members %}
   <div class="col-sm-6 col-lg-3"> 
-      <div class="card">
+      <div class="card mb-4" style= "width 18rem">
         <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"> {{ member.name }}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-detail page">Learn More</a>
+          <p class="card-text"> {{member.instruments}}</p>
+          <a href="{{ member.slug }}.html" class="btn btn-detail page">Learn More</a>
+        
+
+
         </div>
       </div>
  </div>

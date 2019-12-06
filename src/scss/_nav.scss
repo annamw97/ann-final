@@ -1,5 +1,8 @@
 /* nav */
 
-.navbar {
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-expand-lg-navbar-dark-bg-dark {
   margin-bottom: 20px;
+  background-color: white;
 }

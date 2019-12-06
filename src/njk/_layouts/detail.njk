@@ -2,13 +2,23 @@
 
 {% block content %}
 <article class="container">
+  
   <div class="row">
-    <div class="col-sm-4 left-rail">
-  <img src="img/members/{{members.image}}" class="img-fluid" alt="">
-    </div>
-    <div class="col-sm-8">
+    <div class="col-sm-4 col-lg-6 left-rail">
+    <img src="img/members/{{members.image}}" class="img-fluid" alt="">
+  </div>
 
+  <div class="row">
+      <div class="col-sm-8 col-lg-6">
+          <h1> {{ members.name }} <h1>
+            <h5> <p> Born: {{ members.birthdate }} </p> <h5>
+              <p class="byline"> {{members.birthplace}} </p>
+              <p class="srcline"> # </p>
+        </div>
+        </div>
     </div>
   </div>
 </article>
+
+
 {% endblock %}
