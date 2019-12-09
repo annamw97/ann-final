@@ -1,16 +1,18 @@
 {% extends '_layouts/base.njk' %}
 
-{% block content %}
 
+{% block content %}
+<h1 class="albums text-center">ALBUMS</h1>
 
 <div class="container">
   <div class="row">
-    {% for disc in data.discography %}
+    {% for discography in data.discography %}
     <div class="col-sm-6 col-md-4 mb-4"> 
     <div class="card">
-      <img src="img/discs/{{ disc.image }}" class="card-img-top" alt="...">
+      <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title text-center"> {{discography.title}} </h5>
+        <p class="card-text text-center"> {{ discography.year }} </p>
       </div>
     </div>
   </div>

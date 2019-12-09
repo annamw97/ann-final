@@ -7,6 +7,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4 text-center">Queen</h1>
+
     <p class="lead text-center">Since 1970</p>
   </div>
 </div>
@@ -34,11 +35,8 @@
         <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title text-center"> {{ member.name }}</h5>
-          <p class="card-text text-center"> {{member.instruments}}</p>
-          <a href="{{ member.slug }}.html" class="btn btn-detail page">Learn More</a>
-        
-
-
+          <p class="lead-graf text-center"> {{member.instruments}}</p>
+          <a href="{{ member.slug }}.html" class="button text-center">Learn More</a>
         </div>
       </div>
  </div>
