@@ -1,8 +1,10 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}THE BAND QUEEN{% endblock %}
 
 {% block content %}
+
+
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -34,7 +36,7 @@
       <div class="card mb-4" style= "width 18rem">
         <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title text-center"> {{ member.name }}</h5>
+          <h4 class="card-title text-center"> {{ member.name }}</h4>
           <p class="lead-graf text-center"> {{member.instruments}}</p>
           <a href="{{ member.slug }}.html" class="button text-center">Learn More</a>
         </div>

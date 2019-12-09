@@ -1,15 +1,17 @@
 {% extends '_layouts/base.njk' %}
 
 {% block content %}
+
+<title>{% block page_title %} MEMBERS {% endblock %}</title>
+
 <div class="container">
-  
   <div class="row">
     <div class="col-sm-4">
       <img src="img/members/{{members.image}}" class="img-fluid" alt="">
     </div>
 
     <div class="col-sm-8 border-left">
-        <h1> {{ members.name }} </h1>
+        <h1 class= "detail"> {{ members.name }} </h1>
         <ul>
           <li> Born: {{members.birthdate}} </li>
           <li> {{members.birthplace}} </li>
@@ -19,7 +21,7 @@
         <div> {{members.text | safe }} </div>
     </div>
   </div>
-
+<div>
 </div>
 
 {% endblock %}

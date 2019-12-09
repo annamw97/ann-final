@@ -1,7 +1,9 @@
 {% extends '_layouts/base.njk' %}
 
-
 {% block content %}
+
+<title>{% block page_title %} ALBUMS {% endblock %}</title>
+
 <h1 class="albums text-center">ALBUMS</h1>
 
 <div class="container">
@@ -11,7 +13,7 @@
     <div class="card">
       <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"> {{discography.title}} </h5>
+        <h3 class="album-title text-center"> {{discography.title}} </h3>
         <p class="card-text text-center"> {{ discography.year }} </p>
       </div>
     </div>
